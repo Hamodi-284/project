@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "nav header header header"
+                        "nav main main main"
+                        "nav footer footer footer";
+    
+                    
+    grid-template-columns: 200px auto auto auto;
+    grid-template-rows: 60px auto 70px;
+    background-color: white; 
+}
+
+
+
+nav{
+    grid-area: nav;
+    background-color: #20222b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+nav>h3{
+justify-content: center;
+align-content: center;
+padding: 18.5px;
+color: white;
+text-align: center;
+background-color: #101822;
+border-right: 1px solid white;
+border-bottom: 1px solid white;
+}
+
+nav>ul{
+    margin: 0;
+    padding:0px;
+
+}
+
+nav>ul>li{
+    
+    padding: 10px;
+    list-style: none;
+
+
+}
+
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+
+
+nav>ul>li:hover{
+    background-color: red;
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    border-bottom: 1px solid rgb(214, 214, 214);
+    background-color:rgb(247, 247, 247);
+    grid-area: header;
+}
+
+header{
+    background-color: #101822;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header>ul{
+     display: flex;
+     flex-direction: row;
+     padding: 0;
+}
+
+header>ul>li{
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+   
+}
+
+header>ul>li:hover{
+  background-color: #090e14ec;
+}
+
+header>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.emne{
+    font-size: 28px;
+    flex: 2;
+}
+
+
+main{
+    grid-area: main;
+    background-color:rgb(255, 255, 255);
+    border-left: 1px solid rgb(230, 230, 230);
+}
+
+
+footer{
+    grid-area: footer;
+    background-color:rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+

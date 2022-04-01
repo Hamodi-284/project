@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="../stiler/course.css">
+    <script src="https://kit.fontawesome.com/0b2cd8e800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link src="https://unpkg.com/micromodal/dist/micromodal.min.js">
+
+</head>
+
+<body>
+
+
+    <header id="hode">
+        <section class="search-bar">
+            <input type="search" placeholder="Søk etter emne, fil, video ...">
+            <i class="material-icons-outlined">search</i>
+        </section>
+
+        <!-- Endre farger på knapper i header og søkefelt ved :focus -->
+
+        <nav>
+            <ul>
+                <li><a href="emne.html"><i class="material-icons-outlined">timer</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">light_mode</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">notifications</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-round">inbox</i></a></li>
+                <li class="profile"><a href="profil.html"><img src="../assets/bilde.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <nav class="sidebar">
+
+        <section class="logo-container">
+            <a href="#">growify.no</a>
+        </section>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="material-icons-outlined">space_dashboard</i>Dashbord</a></li>
+            <li class="active"><a href="#"><i class="material-icons-round">library_books</i>Emner</a></li>
+            <li><a href="#"><i class="material-icons-outlined">folder</i>Dine Filer</a></li>
+            <li><a href="#"><i class="material-icons">table_view</i>Planlegger</a></li>
+            <li><a href="#"><i class="material-icons-outlined">people_outline</i>Venner</a></li>
+            <li><a href="#"><i class="material-icons-outlined">emoji_events</i>Prestasjoner</a></li>
+            <li><a href="#"><i class="material-icons-round">tune</i>Innstillinger</a></li>
+        </ul>
+
+ 
+    </nav>
+
+
+
+
+    <main>
+
+        <section class="new-post">
+            <span onclick="modal();" class="material-icons-round">
+                add_box
+            </span>
+        </section>
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+        <section class="elements-container">
+            <section class="image-section">
+                <section class="header-container">
+                    <h4>WEBUTVIKLING</h4>
+                    <h2>Det komplette webutvikling kurset fra nybegynner til ekspert.</h2>
+                </section>
+                <section>
+
+                </section>
+            </section>
+
+
+
+
+
+
+
+
+            <section class="secondary-navigation">
+
+                <ul>
+                    <li class="home"><a href="#home">Oversikt</a></li>
+                    <li class="about"><a href="#about">MyNotes</a></li>
+                    <li class="an"><a href="#an">MyTube</a></li>
+                    <li class="faq"><a href="#faq">MyHelper</a></li>
+                </ul>
+
+
+
+
+
+
+            </section>
+
+
+
+
+
+
+
+            <section class="text-container">
+
+
+                <section id="home" class="description">
+
+
+                    <section class="post-title">
+                        <h2>Oversikt</h2>
+                    </section>
+
+
+
+
+
+                    <section class="post">
+
+                        <section class="post-header">
+
+                            <section class="post-elements-container">
+
+
+                                <section class="post-elements">
+
+                                    <figure>
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </figure>
+
+                                    <section class="post-person">
+                                        <h4>Mohammed Almilhim</h4>
+
+                                        <section>
+                                            <p>22. jan 2022</p>
+                                            <section class="material-icons-round public">
+                                                public
+                                            </section>
+                                        </section>
+
+                                    </section>
+
+
+                                </section>
+
+
+
+                                <section class="material-icons more">
+                                    more_vert
+                                </section>
+
+
+
+                            </section>
+
+                        </section>
+
+
+                        <figure class="post-image-container">
+                            <img src="../assets/bolge.jpg" alt="">
+                        </figure>
+
+
+
+
+
+
+                        <section class="post-text">
+
+                            <h3>Lister og for-løkker</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim laoreet
+                                dolore
+                                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+
+                            </p>
+
+
+
+                        </section>
+
+
+
+
+
+
+
+
+                        <section class="tools">
+
+                            <section class="tool-1">
+
+                             
+
+                                <section class="post-creators">
+
+                                    <section class="post-creator p1">
+                                        <img src="../assets/amin.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p2">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p3">
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p4">
+                                        <p id="counter">9+</p>
+                                    </section>
+
+                                </section>
+
+                                <section class="engagement-text">
+                                    <p>Liker innlegget ditt</p>
+                                </section>
+                            </section>
+
+                            <section class="engagement-text">
+                                <p onclick="showComments();" class="show-comments">4 Kommentarer</p>
+                            </section>
+
+                        </section>
+
+                        <section class="engagement-container">
+
+                            <section class="engagement-button-container">
+                                <section onclick="liked();" class="material-icons-round engagement-button">
+                                    <section class="unactive" id="favorite_border">favorite_border</section>
+                                </section>
+
+                                <p>Liker</p>
+
+                            </section>
+
+                            <section onclick="showComments();" class="engagement-button-container">
+                                <span id="comment-btn"
+                                    class="material-icons-outlined engagement-button">
+                                    mode_comment
+                                </span>
+
+                                <p>Kommenter</p>
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    share
+                                </span>
+
+                                <p>Del</p>
+                            </section>
+
+                        </section>
+
+                        <section class="comments hidden">
+
+                            <section class="comment-container">
+                                <section class="comment">
+                                    <section class="comment-person">
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </section>
+
+                                    <section class="comment-text">
+                                        <h4>Mohammed Almilhim</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam eas</p>
+                                    </section>
+
+                                </section>
+
+                                <section class="comment-options">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Liker</a>
+                                    <p>&bull;</p>
+
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Svar</a>
+                                    <p>&bull;</p>
+                                    <p>10 min</p>
+                                </section>
+                            </section>
+
+
+                            <section class="comment-container">
+                                <section class="comment">
+                                    <section class="comment-person">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="comment-text">
+                                        <h4>Abdullah Salha</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adi.</p>
+                                    </section>
+
+                                </section>
+
+                                <section class="comment-options">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Liker</a>
+                                    <p>&bull;</p>
+
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Svar</a>
+                                    <p>&bull;</p>
+                                    <p>3 t</p>
+                                </section>
+                            </section>
+
+                            <section class="comment-container">
+                                <section class="comment">
+                                    <section class="comment-person">
+                                        <img src="../assets/amin.jpg" alt="">
+                                    </section>
+
+                                    <section class="comment-text">
+                                        <h4>Amin Harsho</h4>
+                                        <p>Lorem ipsum dolor sit, amet.</p>
+                                    </section>
+
+                                </section>
+
+                                <section class="comment-options">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Liker</a>
+                                    <p>&bull;</p>
+
+                                    <a href="http://" target="_blank" rel="noopener noreferrer">Svar</a>
+                                    <p>&bull;</p>
+                                    <p>4 t</p>
+                                </section>
+
+                                <!--Her skal du lage input, start med en section-->
+
+                                <section class="new-comment">
+
+                                    <section class="user-image">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="comment-input">
+                                        <input contenteditable='true' onclick='$(this).focus();' type="text" placeholder=" Skriv et Kommentar">
+
+                                        <section class="emoji">
+
+                                            <a href=""><i
+                                                    class="material-icons-outlined hover">sentiment_satisfied</i></a>
+                                            <a href=""><i class="material-icons-outlined hover">photo_camera</i></a>
+                                            <a href=""><i class="material-icons-outlined hover">gif_box</i></a>
+                                            <a href=""><i class="material-icons-outlined hover">image_search</i></a>
+
+                                        </section>
+
+
+                                    </section>
+
+
+                                </section>
+
+
+
+                            </section>
+
+                        </section>
+
+
+
+
+                    </section>
+
+
+
+                </section>
+
+
+
+
+                <section id="about" class="description">
+
+                    <h2>MyNotes</h2>
+                    <hr>
+
+
+                    <section class="post">
+
+                        <section class="more">
+                            <span class="material-icons">
+                                more_vert
+                            </span>
+                        </section>
+
+
+                        <h3>Klasser</h3>
+
+                        <h4>Publisert av: Abdullah</h4>
+                        <h4>19.01.2022</h4>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim laoreet
+                            dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+
+                        </p>
+
+                        <section class="tools">
+
+                            <section class="tool-1">
+
+                                <section class="engagement-text">
+                                    <p>Likt av</p>
+                                </section>
+
+                                <section class="post-creators">
+
+                                    <section class="post-creator p1">
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p2">
+                                        <img src="../assets/amin.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p3">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p4">
+                                        <p id="counter">9+</p>
+                                    </section>
+
+                                </section>
+                            </section>
+
+                            <section class="engagement-text">
+                                <p>2 Kommentarer</p>
+                            </section>
+
+                        </section>
+
+                        <section class="engagement-container">
+
+                            <section class="engagement-button-container">
+                                <section onclick="liked();" class="material-icons-round engagement-button">
+                                    <section class="unactive" id="favorite_border">favorite_border</section>
+                                </section>
+
+                                <p>Liker</p>
+
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    mode_comment
+                                </span>
+
+                                <p>Kommenter</p>
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    share
+                                </span>
+
+                                <p>Del</p>
+                            </section>
+
+
+
+                        </section>
+                    </section>
+
+
+
+
+                </section>
+
+
+
+                <section id="an" class="description">
+
+
+                    <h2>MyTube</h2>
+                    <hr>
+                    <section class="post">
+
+                        <section class="more">
+                            <span class="material-icons">
+                                more_vert
+                            </span>
+                        </section>
+
+
+                        <h3>Klasser</h3>
+
+                        <h4>Publisert av: Abdullah</h4>
+                        <h4>19.01.2022</h4>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim laoreet
+                            dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+
+                        </p>
+
+                        <section class="tools">
+
+                            <section class="tool-1">
+
+                                <section class="engagement-text">
+                                    <p>Likt av</p>
+                                </section>
+
+                                <section class="post-creators">
+
+                                    <section class="post-creator p1">
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p2">
+                                        <img src="../assets/amin.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p3">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p4">
+                                        <p id="counter">9+</p>
+                                    </section>
+
+                                </section>
+                            </section>
+
+                            <section class="engagement-text">
+                                <p>2 Kommentarer</p>
+                            </section>
+
+                        </section>
+
+                        <section class="engagement-container">
+
+                            <section class="engagement-button-container">
+                                <section onclick="liked();" class="material-icons-round engagement-button">
+                                    <section class="unactive" id="favorite_border">favorite_border</section>
+                                </section>
+
+                                <p>Liker</p>
+
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    mode_comment
+                                </span>
+
+                                <p>Kommenter</p>
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    share
+                                </span>
+
+                                <p>Del</p>
+                            </section>
+
+
+
+                        </section>
+                    </section>
+                </section>
+
+
+
+
+                <section id="faq" class="description">
+
+
+                    <h2>MyHelper</h2>
+                    <hr>
+                    <section class="post">
+
+                        <section class="more">
+                            <span class="material-icons">
+                                more_vert
+                            </span>
+                        </section>
+
+
+                        <h3>Klasser</h3>
+
+                        <h4>Publisert av: Abdullah</h4>
+                        <h4>19.01.2022</h4>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim laoreet
+                            dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+
+                        </p>
+
+                        <section class="tools">
+
+                            <section class="tool-1">
+
+                                <section class="engagement-text">
+                                    <p>Likt av</p>
+                                </section>
+
+                                <section class="post-creators">
+
+                                    <section class="post-creator p1">
+                                        <img src="../assets/bilde.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p2">
+                                        <img src="../assets/amin.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p3">
+                                        <img src="../assets/abdullah.jpg" alt="">
+                                    </section>
+
+                                    <section class="post-creator p4">
+                                        <p id="counter">9+</p>
+                                    </section>
+
+                                </section>
+                            </section>
+
+                            <section class="engagement-text">
+                                <p>2 Kommentarer</p>
+                            </section>
+
+                        </section>
+
+                        <section class="engagement-container">
+
+                            <section class="engagement-button-container">
+                                <section onclick="liked();" class="material-icons-round engagement-button">
+                                    <section class="unactive" id="favorite_border">favorite_border</section>
+                                </section>
+
+                                <p>Liker</p>
+
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    mode_comment
+                                </span>
+
+                                <p>Kommenter</p>
+                            </section>
+
+                            <section class="engagement-button-container">
+                                <span class="material-icons-outlined engagement-button">
+                                    share
+                                </span>
+
+                                <p>Del</p>
+                            </section>
+
+
+
+                        </section>
+                    </section>
+                </section>
+
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FHPfYuaoKfUVJwtHoBISihT%2FUntitled%3Fnode-id%3D0%253A1"
+    allowfullscreen></iframe>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <aside class="aside">
+                <section class="overview-container">
+                    <section>
+                        <h2>31+</h2>
+                        <p>Timer</p>
+                    </section>
+
+                    <section>
+                        <h2>25+</h2>
+                        <p>Studenter</p>
+                    </section>
+                </section>
+                <nav>
+                    <ul>
+                        <li><i class="material-icons-round">play_arrow</i>13 hours on-demand video</li>
+                        <li><i class="material-icons-round">key</i>lifetime access</li>
+                        <li><i class="material-icons-round">download</i>42 downloadable resources</li>
+                        <li><i class="material-icons-round">assignment</i>Assignments</li>
+                    </ul>
+                </nav>
+            </aside>
+
+        </section>
+    </main>
+
+
+
+
+
+
+</body>
+
+
+<!-- Modal content -->
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+        <h3>Modal Footer</h3>
+    </div>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.querySelector('.modal-content');
+
+    // Get the button that opens the modal
+    var btn = document.querySelector('.new-post');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+        btn.style.display = "none";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+        btn.style.display = "flex";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function liked() {
+        likeBtn = document.getElementById('favorite_border');
+        counter = document.getElementById('counter');
+
+
+        if (likeBtn.classList == 'unactive') {
+            likeBtn.classList.remove("unactive");
+            likeBtn.classList.add("active");
+            likeBtn.innerText = "favorite";
+            likeBtn.style.color = "#fd2b4e";
+            counter.innerText = "10+"
+        }
+
+        else {
+            likeBtn.classList.remove("active");
+            likeBtn.classList.add("unactive");
+            likeBtn.innerText = "favorite_border";
+            likeBtn.style.color = "black";
+            counter.innerText = "9+"
+        }
+
+
+
+
+    }
+
+    function showComments() {
+
+        var comments = document.querySelector('.comments');
+
+
+        if (comments.classList.contains("hidden") == true){
+            comments.style.display = "flex";
+             comments.classList.add("show");
+            comments.classList.remove("hidden");
+           
+
+            
+        }
+
+        else{
+            comments.style.display = "none";
+            comments.classList.add("hidden");
+            comments.classList.remove("show");
+        }
+
+  
+
+
+    }
+
+</script>
+
+<script src="../script/sticky.js"></script>
+
+
+</html>

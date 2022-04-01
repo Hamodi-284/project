@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="../stiler/dashboard.css">
+    <script src="https://kit.fontawesome.com/0b2cd8e800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Kalender-->
+
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.js'></script>
+</head>
+
+<body>
+
+    <nav class="sidebar-small">
+        <ul>
+            <li class="logo"><a href="dashboard.html"><img src="../assets/grow.jpg" alt=""></a></li>
+            <li class="active"><a class="active-text" href="course.html"><i
+                        class="material-icons-outlined">space_dashboard</i></a>
+            </li>
+            <li><a href="planlegger.html"><i class="material-icons">table_view</i></a></li>
+            <li><a href="#"><i class="material-icons-round">person_outline</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">people_outline</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">outlined_flag</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">emoji_events</i></a></li>
+            <li><a href="#"><i class="material-icons-round">tune</i></a></li>
+        </ul>
+
+        <section class="sidebar-logout">
+            <a href="#"><i class="material-icons-round">logout</i></a>
+        </section>
+
+    </nav>
+
+
+
+
+
+    <header class="header">
+
+        <section class="header-container">
+            <section class="search-bar">
+                <input type="search" placeholder="Søk etter emne, fil, video ...">
+                <i class="material-icons-outlined">search</i>
+            </section>
+        </section>
+
+        <!-- Endre farger på knapper i header og søkefelt ved :focus -->
+
+        <nav>
+            <ul>
+                <li><a href="emne.html"><i class="material-icons-outlined">timer</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">light_mode</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">notifications</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-round">inbox</i></a></li>
+                <li class="profile"><a href="profil.html"><img src="../assets/bilde.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="welcome-board">
+            <h1 class="primary">Hei, Mohammed.</h1>
+            <h3>Du gjør det bra, fortsett å øve 🧠 </h3>
+        </section>
+
+        <section class="goal-container">
+            <section class="goal-overview light-pink">
+                <figure><img src="../assets/undraw_dev_productivity_umsq (1).svg " alt=""></figure>
+                <section class="overview-information">
+                    <h2 class="light-pink-text">30 min</h2>
+                    <h4 class="light-pink-text">Jobbe tid</h4>
+                </section>
+            </section>
+            <section class="goal-overview light-purple">
+                <figure><img src="../assets/undraw_progress_overview_re_tvcl.svg" alt=""></figure>
+                <section class="overview-information">
+                    <h2 class="light-purple-text">4+</h2>
+                    <h4 class="light-purple-text">Mål utført</h4>
+                </section>
+            </section>
+        </section>
+
+
+        <h2 class="indicator primary">Emner</h2>
+
+        <section class="subject-container">
+
+            <section class="prev-scroll">
+                <section class="prev">
+                    <span onclick="prev();" class="material-icons-round prev-btn">
+                        navigate_before
+                    </span>
+                </section>
+            </section>
+
+            <section class="next-scroll">
+                <section class="next animate__animated animate__fadeIn">
+                    <span onclick="next();" class="material-icons-round next-btn">
+                        navigate_next
+                    </span>
+                </section>
+            </section>
+
+
+            <section onscroll="scrollbar();" class="subject">
+                <section class="card cream animate__animated animate__fadeIn animate__delay-300ms">
+                    <figure class="figure-blue">
+                        <img src="../assets/thomas-vimare-IZ01rjX0XQA-unsplash.jpg" alt="">
+                    </figure>
+                    <h4>Programmering 1</h4>
+                    <h5>ITF10219-1</h5>
+
+                    <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                </section>
+
+
+                <section class="card cream animate__animated animate__fadeIn animate__delay-300ms">
+                    <figure class="figure-purple">
+                        <img src="../assets/undraw_feeling_proud_qne1.svg" alt="">
+                    </figure>
+
+                    <h4>Webutvikling</h4>
+                    <h5>ITF10511-1</h5>
+
+                    <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                </section>
+
+
+
+                <section class="card cream animate__animated animate__fadeIn animate__delay-300ms">
+
+                    <figure class="figure-pink">
+                        <img src="../assets/undraw_firmware_re_fgdy (1).svg" alt="">
+                    </figure>
+
+                    <h4>Programmering 2</h4>
+                    <h5>ITF15019-1</h5>
+
+                    <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                </section>
+
+
+                <section class="card cream animate__animated animate__fadeIn animate__delay-300ms">
+
+                    <figure class="figure-pink">
+                        <img src="../assets/undraw_charts_re_5qe9 (1).svg" alt="">
+                    </figure>
+
+                    <h4>Databaser</h4>
+                    <h5>ITF15019-1</h5>
+
+                    <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+
+                </section>
+
+                <section class="card cream animate__animated animate__fadeIn animate__delay-300ms">
+
+                    <figure class="figure-pink">
+                        <img src="../assets/undraw_firmware_re_fgdy (1).svg" alt="">
+                    </figure>
+
+                    <h4>Datasikkerhet</h4>
+                    <h5>ITF15019-1</h5>
+
+
+                    <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+
+
+
+
+                </section>
+
+
+            </section>
+        </section>
+
+
+
+        <h2 class="indicator primary reveal">MySpace</h2>
+
+
+        <section class="languages">
+
+
+            <section class="card-container yellow">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+                            <img src="../assets/js-removebg-preview.png" alt="">
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>JavaScript</h3>
+                            <p>Programmering</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+
+
+
+
+
+            <section class="card-container blue">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+                            <img src="../assets/python-removebg-preview.png" alt="">
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>Python</h3>
+                            <p>Programmering</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section class="card-container purple">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>Java</h3>
+                            <p>Programmering</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section class="card-container pinky">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+                            <img src="../assets/image (1).png" alt="">
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>SQL</h3>
+                            <p>Databaser</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section class="card-container orange">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>HTML</h3>
+                            <p>Programmering</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+
+
+            <section class="card-container green">
+                <section class="card-box">
+
+                    <section class="card-box-figure-contianer">
+                        <figure>
+
+                        </figure>
+                    </section>
+
+                    <section class="card-information">
+
+                        <section>
+                            <h3>CSS</h3>
+                            <p>Programmering</p>
+                        </section>
+
+                        <section class="lolo">
+                            <a href="emne.html"><i class="material-icons-round">play_arrow</i></a>
+                        </section>
+
+
+                    </section>
+
+                </section>
+
+            </section>
+        </section>
+
+
+
+
+    </main>
+
+
+   
+
+    <script>
+
+        ScrollReveal().reveal('.card-container', { delay: 300 });
+        ScrollReveal().reveal('.reveal', { delay: 150 });
+
+    </script>
+
+    <script>
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.querySelectorAll("#myLI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            myNodelist[i].appendChild(span);
+        }
+
+        // Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('#myUL');
+        list.addEventListener('click', function (ev) {
+            if (ev.target.id === 'myLI') {
+                ev.target.classList.toggle('checked');
+            }
+        }, false);
+
+
+    </script>
+
+
+    <script src="../script/sticky.js"></script>
+    <script src="../script/scroll.js"></script>
+    <script src="../script/sidebar.js"></script>
+
+
+
+</body>
+
+</html>

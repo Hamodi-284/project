@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: saddlebrown;
+}
+
+
+
+.logo {
+    background-color: seagreen;
+    height: 100%;
+}
+
+.logo>a {
+
+    text-align: center;
+}
+
+nav {
+    background-color: royalblue;
+    display: flex;
+    width: 80%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+.sok {
+    margin: 5px;
+}
+
+nav ul {
+    display: flex;
+}

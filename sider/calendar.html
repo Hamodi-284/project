@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeplan</title>
+    <link rel="stylesheet" href="../stiler/dashboard.css">
+    <script src="https://kit.fontawesome.com/0b2cd8e800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Kalender-->
+
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.js'></script>
+</head>
+
+<body>
+
+    <nav class="sidebar-small">
+        <ul>
+            <li class="logo"><a href="dashboard.html"><img src="../assets/grow.jpg" alt=""></a></li>
+            <li class="active"><a class="active-text" href="course.html"><i
+                        class="material-icons-outlined">space_dashboard</i></a>
+            </li>
+            <li><a href="#"><i class="material-icons">table_view</i></a></li>
+            <li><a href="#"><i class="material-icons-round">person_outline</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">people_outline</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">outlined_flag</i></a></li>
+            <li><a href="#"><i class="material-icons-outlined">emoji_events</i></a></li>
+            <li><a href="#"><i class="material-icons-round">tune</i></a></li>
+        </ul>
+
+        <section class="sidebar-logout">
+            <a href="#"><i class="material-icons-round">logout</i></a>
+        </section>
+
+    </nav>
+
+
+
+
+
+    <header class="header">
+
+        <section class="header-container">
+            <section class="search-bar">
+                <input type="search" placeholder="Søk etter emne, fil, video ...">
+                <i class="material-icons-outlined">search</i>
+            </section>
+        </section>
+
+        <!-- Endre farger på knapper i header og søkefelt ved :focus -->
+
+        <nav>
+            <ul>
+                <li><a href="emne.html"><i class="material-icons-outlined">timer</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">light_mode</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-outlined">notifications</i></a></li>
+                <li><a href="emne.html"><i class="material-icons-round">inbox</i></a></li>
+                <li class="profile"><a href="profil.html"><img src="../assets/bilde.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="calendar">
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
+
+
+    <script src="../script/sticky.js"></script>
+    <script src="../script/scroll.js"></script>
+    <script src="../script/sidebar.js"></script>
+
+
+
+</body>
+
+</html>

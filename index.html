@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growify - Bli sett på nettet</title>
+    <link rel="stylesheet" href="stiler/hjemmeside.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+</head>
+<body>
+
+    <div>
+
+<header id="opp">
+    <a class="logo" href="/">Growify.no</a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#"><span data-text>Hjem</span></a></li>
+            <li><a href="#"><span data-text>Tjenester</span><i style="padding: 0 0 0 15px;" class="fas fa-chevron-down arrow"></i></a></li>
+            <li><a href="#"><span>Om oss</span></a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="sider/signin.html">Logg inn</a>
+    <p class="menu" onclick="hjemme();"><i class="fas fa-bars fa-lg"></i></p>
+</header>
+<div id="mobile__menu" class="overlay">
+    <a onclick="vis();" class="close">&times;</a>
+    <div class="overlay__content">
+        <a href="#">Hjem</a>
+        <a href="#">Tjenester</a>
+        <a href="#">Om oss</a>
+    </div>
+</div>
+
+
+    <div class="home">
+
+        <div class="info">
+
+            <div class="info-header">
+                <h6 style="color: #0066ff;" id="infoline" class="animate__animated animate__fadeInDown">Bli sett. Bytt til Growify</h6>
+                <h1 style="color: rgb(18, 19, 22);" class="animate__animated animate__fadeIn">Hmm.. en nettside som<br> øker trafikk og synnlighet!</h1>
+            </div>
+
+
+            <div class="info-body">
+                <p style="color: black;">Med over 3 års erfaring i bransjen, er vi i growify <br> stolte av å være et ny oppstartet firma innen: søkemotoroptimalisering og webside-utvikling.
+                <br>
+             </p>
+                
+            </div>
+
+            <div class="contact-div">
+                <a href="sider/signup.html" class="kontakt">Registrer deg</a>
+            </div>
+
+                
+
+        </div>
+
+        <div class="image">
+            <img src="assets/bolge.jpg" alt="">
+
+           
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+</body>
+<script src="script/mobile.js"></script>
+<script src="script/cookies.js"></script>
+
+</html>
