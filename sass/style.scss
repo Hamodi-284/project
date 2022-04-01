@@ -1,5 +1,6 @@
 @import "../sass/sidebar.scss";
 @import "../sass/header.scss";
+@import "../sass/color.scss";
 
 
 html {
@@ -319,10 +320,7 @@ aside {
 		}
 	}
 }
-.cream {
-	background-color: #f0f0f0;
-	color: black;
-}
+
 .purple {
 	background-color: #5900ff;
 }
@@ -370,15 +368,7 @@ aside {
 	backdrop-filter: blur(6.5px);
 	-webkit-backdrop-filter: blur(6.5px);
 }
-.yellow {
-	background-color: #FFCB36;
-}
-.pinky {
-	background-color: #EA0F5F;
-}
-.green {
-	background-color: #11D985;
-}
+
 .card-box {
 	position: relative;
 	display: flex;
