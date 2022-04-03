@@ -1,0 +1,68 @@
+@media only screen and (max-width: 40em) {
+	.welcome-board {
+		margin: 0 15px;
+	}
+	.indicator {
+		margin: 0 15px;
+	}
+	.goal-container {
+		margin: 0 15px;
+	}
+	.languages {
+		margin: 0 15px;
+	}
+	.subject-container {
+		position: relative;
+	}
+	.subject {
+		position: relative;
+		padding: 15px 0 15px 15px;
+		width: auto;
+	}
+	.card {
+		width: 210px;
+		&:last-child {
+			margin-right: 15px !important;
+		}
+	}
+	body {
+		display: grid;
+		grid-template-areas: "header header header header" "main main main main" "nav nav nav nav";
+		grid-template-rows: 76px auto 76px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.sidebar-small {
+		position: relative !important;
+		flex-direction: row !important;
+		height: 76px;
+		width: 100%;
+		padding: 0;
+		> ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			> li {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 50px;
+				width: 50px;
+				list-style: none;
+				transition: ease-in-out 250ms;
+			}
+		}
+	}
+	.logo {
+		display: none !important;
+	}
+	.sidebar-logout {
+		display: none;
+	}
+	aside {
+		display: none;
+	}
+	.card-container {
+		width: 100%;
+	}
+}
